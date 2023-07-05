@@ -1,0 +1,19 @@
+[network]
+rollup_url = "http://127.0.0.1:5454"
+
+[general]
+tps = 100
+account_count = 1000
+max_self_created_accounts = 500 # Nmber of accounts that would be created by depositting
+max_unclaimed_accounts = 10 # Number of accounts created by transfer that have not been claimed by L1 wallets
+throttling_level = 0 # 0 - disabled, 10 - max
+max_throttling_variance = 0 # how much throttling will be affected by its modulation (rand)
+generate_reports = false
+
+[transaction]
+min_deposit_value = 10
+max_deposit_value = 100
+min_transfer_value = 1
+max_transfer_value = 10
+min_transfer_to_new_value = 1
+max_transfer_to_new_value = 10
